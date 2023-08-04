@@ -1,4 +1,10 @@
-# Home Assistant Community Add-ons by lburais
+# Home Assistant Community Add-ons by Laurent Burais
+
+![update-badge](https://img.shields.io/github/last-commit/lburais/hassio-addons?label=last%20update)
+
+[![GitHub Super-Linter](https://github.com/lburais/hassio-addons/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![Builder](https://github.com/lburais/hassio-addons/workflows/Builder/badge.svg)](https://github.com/lburais/hassio-addons/actions/workflows/builder.yaml)
+[![Statistics](https://github.com/lburais/hassio-addons/workflows/Generate%20weekly%20stats/badge.svg)](https://github.com/lburais/hassio-addons/actions/workflows/weekly_stats.yaml)
 
 ## About
 
@@ -13,13 +19,61 @@ Just click the link above or add my repo to the hassio addons repositorys: https
 
 ## Add-On List
 
-### Apache2
-Webserver Addon
-Comes in three variants:
-[Minimal (Useful for minimal websites with no PHP usage)] (https://github.com/FaserF/hassio-addons/tree/master/apache2-minimal)<br />
-[Minimal with MariaDB Access (Comes with MariaDB Client, PHP MariaDB and some important PHP modules)] (https://github.com/FaserF/hassio-addons/tree/master/apache2-minimal-mariadb)<br />
-[Normal (comes with the most used PHP Extensions, MariaDB)] (https://github.com/FaserF/hassio-addons/tree/master/apache2)<br />
-Support: Yes
+### [Calibre](calibre/)
+
+![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fcalibre%2Fconfig.json)
+![Update](https://img.shields.io/badge/dynamic/json?label=Updated&query=%24.last_update&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fcalibre%2Fupdater.json)
+![aarch64][aarch64-badge]
+![amd64][amd64-badge]
+![armv7][armv7-badge]
+
+[Calibre](https://calibre-ebook.com/) is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It’s also completely free and open source and great for both casual users and computer experts.
+This addon is based on work done by [alexbelgium](https://github.com/alexbelgium/hassio-addons/calibre) and the docker image (https://github.com/linuxserver/)
+
+Specifics:
+* latest calibre release
+
+### deemix
+[deemix Addon](https://github.com/lburais/hassio-addons/deemix)
+Image: []()
+Source : []()
+Specifics:
+*
+
+### Plex Server
+[Plex Server Addon](https://github.com/lburais/hassio-addons/plex)
+Image: []()
+Source : []()
+Specifics:
+*
+
+### RClone
+[RClone Addon](https://github.com/lburais/hassio-addons/rclone)
+Image: []()
+Source : []()
+Specifics:
+* 
+
+### RustDesk
+[RustDesk Addon](https://github.com/lburais/hassio-addons/rustdesk)
+Image: []()
+Source : []()
+Specifics:
+*
+
+### VS Code
+[VS Code Addon](https://github.com/lburais/hassio-addons/vscode)
+Image: []()
+Source : []()
+Specifics:
+*
+
+### Web Server
+[Web Server Addon](https://github.com/lburais/hassio-addons/web)
+Image: []()
+Source : []()
+Specifics:
+*
 
 ## Support
 

@@ -19,16 +19,10 @@ Just click the link above or add my repo to the hassio addons repositorys: https
 
 ## Add-On List
 
-### [Calibre](calibre/)
-
-![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fcalibre%2Fconfig.json)
-![Update](https://img.shields.io/badge/dynamic/json?label=Updated&query=%24.last_update&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fcalibre%2Fupdater.json)
-![aarch64][aarch64-badge]
-![amd64][amd64-badge]
-![armv7][armv7-badge]
+### [Calibre](calibre/) ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fcalibre%2Fconfig.json) ![Update](https://img.shields.io/badge/dynamic/json?label=Updated&query=%24.last_update&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fcalibre%2Fupdater.json)
 
 [Calibre](https://calibre-ebook.com/) is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It’s also completely free and open source and great for both casual users and computer experts.
-This addon is based on work done by [alexbelgium](https://github.com/alexbelgium/hassio-addons/calibre) and the docker image (https://github.com/linuxserver/)
+This addon is based on work done by [alexbelgium](https://github.com/alexbelgium/hassio-addons/tree/master/calibre) and the docker image (https://github.com/linuxserver/calibre)
 
 Specifics:
 * latest calibre release

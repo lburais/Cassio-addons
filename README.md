@@ -86,11 +86,9 @@ Specifics:
 *
 
 ### Web Server
-[Web Server Addon](https://github.com/lburais/hassio-addons/web)
-Image: []()
-Source : []()
-Specifics:
-*
+### [Web Server](web/)
+
+This addon is based on work done by [FaserF](https://github.com/FaserF/hassio-addons/tree/master/apache2-minimal)
 
 ## Support
 

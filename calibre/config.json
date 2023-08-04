@@ -61,7 +61,7 @@
     "PUID": "0",
     "shm_size": "1gb"
   },
-  "image": "ghcr.io/alexbelgium/calibre-{arch}",
+  "image": "ghcr.io/lburais/calibre-{arch}",
   "ingress": true,
   "init": false,
   "map": [

@@ -24,8 +24,31 @@ Just click the link above or add my repo to the hassio addons repositorys: https
 [Calibre](https://calibre-ebook.com/) is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It’s also completely free and open source and great for both casual users and computer experts.
 This addon is based on work done by [alexbelgium](https://github.com/alexbelgium/hassio-addons/tree/master/calibre) and the docker image (https://github.com/linuxserver/calibre)
 
-Specifics:
+#### Specifics
+
 * latest calibre release
+
+#### Configuration
+
+---
+
+Webui can be found at <http://your-ip:PORT>.
+Configurations can be done through the app webUI, except for the following options.
+Please read the upstream container documentation for further info : https://github.com/linuxserver/docker-calibre/blob/35b5e3ae06ba95f666687150ca5fd632b8db9e87/README.md#application-setup
+
+In particular, the webserver and wireless connection needs to be manually enabled from the desktop app to be able to access it, using ports 8081 and 9090 respectively.
+
+```yaml
+PGID: user
+GPID: user
+TZ: timezone
+PASSWORD: Optionally set a password for the gui
+CLI_ARGS: Optionally pass cli start arguments to calibre
+localdisks: sda1 #put the hardware name of your drive to mount separated by commas, or its label. ex. sda1, sdb1, MYNAS...
+networkdisks: "//SERVER/SHARE" # optional, list of smb servers to mount, separated by commas
+cifsusername: "username" # optional, smb username, same for all smb shares
+cifspassword: "password" # optional, smb password
+```
 
 ### deemix
 [deemix Addon](https://github.com/lburais/hassio-addons/deemix)

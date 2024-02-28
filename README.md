@@ -2,10 +2,6 @@
 
 ![update-badge](https://img.shields.io/github/last-commit/lburais/hassio-addons?label=last%20update)
 
-[![GitHub Super-Linter](https://github.com/lburais/hassio-addons/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
-[![Builder](https://github.com/lburais/hassio-addons/workflows/Builder/badge.svg)](https://github.com/lburais/hassio-addons/actions/workflows/builder.yaml)
-[![Statistics](https://github.com/lburais/hassio-addons/workflows/Generate%20weekly%20stats/badge.svg)](https://github.com/lburais/hassio-addons/actions/workflows/weekly_stats.yaml)
-
 ## About
 
 In the Subfolders you can find all my custom addons for homeassistant os.
@@ -19,76 +15,10 @@ Just click the link above or add my repo to the hassio addons repositorys: https
 
 ## Add-On List
 
-### [Calibre](calibre/) ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fcalibre%2Fconfig.json) ![Update](https://img.shields.io/badge/dynamic/json?label=Updated&query=%24.last_update&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fcalibre%2Fupdater.json)
+### [Deemix](calibre/) ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix%2Fconfig.json) ![Update](https://img.shields.io/badge/dynamic/json?label=Updated&query=%24.last_update&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix%2Fupdater.json)
 
-[Calibre](https://calibre-ebook.com/) is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. It’s also completely free and open source and great for both casual users and computer experts.
-This addon is based on work done by [alexbelgium](https://github.com/alexbelgium/hassio-addons/tree/master/calibre) and the docker image (https://github.com/linuxserver/calibre)
-
-#### Specifics
-
-* latest calibre release
-
-#### Configuration
-
----
-
-Webui can be found at <http://your-ip:PORT>.
-Configurations can be done through the app webUI, except for the following options.
-Please read the upstream container documentation for further info : https://github.com/linuxserver/docker-calibre/blob/35b5e3ae06ba95f666687150ca5fd632b8db9e87/README.md#application-setup
-
-In particular, the webserver and wireless connection needs to be manually enabled from the desktop app to be able to access it, using ports 8081 and 9090 respectively.
-
-```yaml
-PGID: user
-GPID: user
-TZ: timezone
-PASSWORD: Optionally set a password for the gui
-CLI_ARGS: Optionally pass cli start arguments to calibre
-localdisks: sda1 #put the hardware name of your drive to mount separated by commas, or its label. ex. sda1, sdb1, MYNAS...
-networkdisks: "//SERVER/SHARE" # optional, list of smb servers to mount, separated by commas
-cifsusername: "username" # optional, smb username, same for all smb shares
-cifspassword: "password" # optional, smb password
-```
-
-### deemix
-[deemix Addon](https://github.com/lburais/hassio-addons/deemix)
-Image: []()
-Source : []()
-Specifics:
-*
-
-### Plex Server
-[Plex Server Addon](https://github.com/lburais/hassio-addons/plex)
-Image: []()
-Source : []()
-Specifics:
-*
-
-### RClone
-[RClone Addon](https://github.com/lburais/hassio-addons/rclone)
-Image: []()
-Source : []()
-Specifics:
-* 
-
-### RustDesk
-[RustDesk Addon](https://github.com/lburais/hassio-addons/rustdesk)
-Image: []()
-Source : []()
-Specifics:
-*
-
-### VS Code
-[VS Code Addon](https://github.com/lburais/hassio-addons/vscode)
-Image: []()
-Source : []()
-Specifics:
-*
-
-### Web Server
-### [Web Server](web/)
-
-This addon is based on work done by [FaserF](https://github.com/FaserF/hassio-addons/tree/master/apache2-minimal)
+[Deemix](https://) tbc
+This addon is based on work done by [bocki](https://gitlab.com/Bockiii/deemix-docker)
 
 ## Support
 

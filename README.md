@@ -15,7 +15,7 @@ Just click the link above or add my repo to the hassio addons repositorys: https
 
 ## Add-On List
 
-### [Deemix](calibre/) ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix%2Fconfig.json) ![Update](https://img.shields.io/badge/dynamic/json?label=Updated&query=%24.last_update&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix%2Fupdater.json)
+### [Deemix](calibre/) ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix%2Fconfig.yaml) ![Update](https://img.shields.io/badge/dynamic/json?label=Updated&query=%24.last_update&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix%2Fupdater.yaml)
 
 [Deemix](https://) tbc
 This addon is based on work done by [bocki](https://gitlab.com/Bockiii/deemix-docker)
@@ -31,7 +31,7 @@ Please keep in mind, that this software is only tested on haos running on a Free
 
 MIT License
 
-Copyright (c) 2019-2023 FaserF
+Copyright (c) 2019-2023 lburais
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

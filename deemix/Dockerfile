@@ -13,7 +13,12 @@ LABEL \
     app.deemix.image.description="Docker image for Deemix" \
     maintainer="Bocki"
 
-RUN curl -L $STATIC_URL/deemix-server-linux-$TARGETARCH -o deemix-server
+# aarch64 (homeassistant space) = arm64 (deemix space)
+RUN if [ ${TARGETARCH} = "aarch64" ]; then \
+        curl -L "${STATIC_URL}/deemix-server-linux-arm64" -o deemix-server; \
+    else \
+        curl -L "${STATIC_URL}/deemix-server-linux-${TARGETARCH}" -o deemix-server; \
+    fi
 
 COPY root/ /
 

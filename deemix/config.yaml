@@ -1,8 +1,8 @@
 ---
-name: "Deemix"
-version: "1.0.0"
-description: "deemix"
-slug: "deemix"
+name: "Deemix Bocki"
+version: "1.0.1"
+description: "deemix-bocki"
+slug: "deemix-bocki"
 arch:
   - aarch64
   - amd64

@@ -1,24 +1,36 @@
 #!/usr/bin/with-contenv bash
 
-# test write access to download and config folder and test internet connectivity
-printf '[cont-init.d] Fixing Folder Permissions - Config Folder\n'
+printf '[cont-init.d] Setting deemix-server\n'
 
-chown -R abc:abc /config
+chmod +x /deemix-server
 
-# find all folders in the download folder and own them to the container user. This will not change files but should run quicker on big collections.
-if [ ! -z ${DISABLE_OWNERSHIP_CHECK} ]; then
-    printf '[cont-init.d] Download Folder Ownership Check disabled by Environment Variable\n'
-else
-    printf '[cont-init.d] Fixing Folder Permissions - Downloads Folder\n'
-	find /downloads -type d -exec chown abc:abc {} +
+printf '[cont-init.d] Creating abc:abc user:group 0:0\n'
+
+echo "abc:x:0:0:Linux User,,,:/home/abc:/bin/ash" >> /etc/passwd
+echo "abc:x:1000:" >> /etc/group
+
+printf '[cont-init.d] Setting downloads folder\n'
+
+mkdir -p /share/Freebox/Musiques
+ln -s /share/Freebox/Musiques /downloads
+
+printf '[cont-init.d] Setting config folder\n'
+
+mkdir -p /homeassistant/deemix
+ln -s /homeassistant/deemix /config
+
+if [ -f "/deemix/config.json" ]; then
+    cp /deemix/config.json /config/config.json
+    rm /deemix/config.json
 fi
 
-
-# add executability to server
-chmod +x /deemix-server
+if [ -f "/deemix/login.json" ]; then
+    cp /deemix/login.json /config/login.json
+    rm /deemix/login.json
+fi
 
 # Fix misconfigured download locations. The container's download map is always /downloads.
 if [ -f "/config/config.json" ]; then
     jq '.downloadLocation = "/downloads"' /config/config.json > tmp.$$.json && mv tmp.$$.json /config/config.json
-    chown abc:abc /config/config.json
 fi
+

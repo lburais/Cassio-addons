@@ -22,5 +22,7 @@ RUN if [ ${TARGETARCH} = "aarch64" ]; then \
 
 COPY root/ /
 
+COPY config/ /deemix
+
 EXPOSE 6595
 ENTRYPOINT [ "/init" ]

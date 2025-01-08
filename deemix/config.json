@@ -10,11 +10,7 @@
     ],
     "boot": "auto",
     "description": "Deezer downloader",
-    "environment": {
-        "PGID": 0,
-        "PUID": 0,
-        "ARL": ""
-    },
+    "devices": [],
     "host_network": false,
     "homeassistant_api": true,
     "ingress": true,

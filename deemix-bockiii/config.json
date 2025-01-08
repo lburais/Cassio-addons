@@ -10,6 +10,7 @@
     ],
     "boot": "auto",
     "description": "Deezer downloader by Bockiii",
+    "devices": [],
     "host_network": false,
     "homeassistant_api": true,
     "ingress": true,

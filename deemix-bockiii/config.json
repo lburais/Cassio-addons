@@ -10,11 +10,6 @@
     ],
     "boot": "auto",
     "description": "Deezer downloader by Bockiii",
-    "environment": {
-        "PGID": 0,
-        "PUID": 0,
-        "ARL": ""
-    },
     "host_network": false,
     "homeassistant_api": true,
     "ingress": true,

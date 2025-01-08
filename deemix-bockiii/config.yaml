@@ -1,14 +1,14 @@
 ---
-name: "Deemix Bocki"
-version: "1.0.1"
-description: "deemix-bocki"
-slug: "deemix-bocki"
+name: "Deemix by Bockiii"
+version: "1.0.2"
+description: "deemix-bockiii"
+slug: "deemix-bockiii"
 arch:
   - aarch64
   - amd64
-url: "https://github.com/lburais/hassio-addons/tree/master/deemix",
-startup: "application",
-webui: "http://[HOST]:[PORT:6595]",
+url: "https://github.com/lburais/hassio-addons/tree/master/deemix-bockiii"
+startup: "application"
+webui: "http://[HOST]:[PORT:6595]"
 ports:
   6595/tcp: 6595
 ports_description:

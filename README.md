@@ -13,11 +13,6 @@ You can find here all my custom addons for Home Assistant OS.
 
 If you want to do add the repository manually, please follow the procedure highlighted in the [Home Assistant website](https://home-assistant.io/hassio/installing_third_party_addons). Use the following URL to add this repository: https://github.com/lburais/hassio-addons
 
-[![lburais Homeassistant Addons](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Flburais%2Fhassio-addons)
-<br />
-The installation of this add-on is pretty straightforward and not different in comparison to installing any other custom Home Assistant add-on.<br />
-Just click the link above or add my repository: https://github.com/lburais/hassio-addons
-
 ## Add-ons provided by this repository
 
 &#10003; [Deemix by Bockiii](deemix-bockiii/): deezer downloader based on work done by [bocki](https://gitlab.com/Bockiii/deemix-docker)

@@ -1,15 +1,30 @@
 {
+    "apparmor": true,
     "arch": [
       "aarch64",
-      "amd64"
+      "amd64",
+      "armv7"
     ],
-    "description": "deezer downloader by Bockiii",
+    "backup_exclude": [
+      "**/downloads/**"
+    ],
+    "boot": "auto",
+    "description": "Deezer downloader by Bockiii",
     "environment": {
         "PGID": 0,
         "PUID": 0,
         "ARL": ""
-      },
-      "image": "ghcr.io/alexbelgium/deemix-bockiii-{arch}",
+    },
+    "host_network": false,
+    "homeassistant_api": true,
+    "ingress": true,
+    "ingress_port": 6595,
+    "ingress_stream": true,
+    "init": false,
+    "map": [ 
+      "share:rw", 
+      "config:rw"
+    ],
     "name": "Deemix by Bockiii",
     "options": {
       "PGID": 0,
@@ -17,10 +32,6 @@
       "ARL": ""
     },
     "panel_icon": "mdi:music-box-multiple",
-    "map": [ 
-      "share:rw", 
-      "config:rw"
-    ],
     "ports": {
       "6595/tcp": 6595
     },

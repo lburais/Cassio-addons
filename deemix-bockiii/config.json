@@ -7,8 +7,6 @@
     "environment": {
         "PGID": 0,
         "PUID": 0,
-        "TZ": "Europe/Paris",
-        "UMASK_SET": 22,
         "ARL": ""
       },
       "image": "ghcr.io/alexbelgium/deemix-bockiii-{arch}",
@@ -16,8 +14,6 @@
     "options": {
       "PGID": 0,
       "PUID": 0,
-      "TZ": "Europe/Paris",
-      "UMASK_SET": 22,
       "ARL": ""
     },
     "panel_icon": "mdi:music-box-multiple",
@@ -32,12 +28,10 @@
       "6595/tcp": "Web interface"
     },
     "schema": {
-        "PGID": "int",
-        "PUID": "int",
-        "TZ": "str?",
-        "UMASK_SET": "int",
-        "ARL": "str?"
-      },
+      "PGID": "int",
+      "PUID": "int",
+      "ARL": "str?"
+    },
     "slug": "deemix-bockiii",
     "startup": "application",
     "url": "https://github.com/lburais/hassio-addons/tree/master/deemix-bockiii",

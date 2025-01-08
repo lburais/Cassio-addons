@@ -27,5 +27,8 @@ echo '[services.d] Creating abc:abc user:group 0:0'
 echo "abc:x:0:0:Linux User,,,:/home/abc:/bin/ash" >> /etc/passwd
 echo "abc:x:1000:" >> /etc/group
 
+cat /etc/passwd
+cat /etc/group
+
 echo "[services.d] Starting Deemix"
-s6-setuidgid abc /deemix-server
+s6-setuidgid ${PUID}:${GUID} /deemix-server

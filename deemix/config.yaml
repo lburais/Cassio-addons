@@ -9,7 +9,7 @@ arch:
   - aarch64
   - armv7
 # machine:
-url: https://github.com/lburais/hassio-deemix/tree/master/deemix
+url: https://github.com/lburais/hassio-addons/tree/master/deemix
 startup: application
 webui: http://[HOST]:[PORT:6595]
 boot: auto
@@ -59,10 +59,10 @@ environment:
 # stdin
 # legacy
 options:
-#  PGID: 0
-#  PUID: 0
-#  TZ: Europe/Paris
-#  UMASK_SET: 022
+  #  PGID: 0
+  #  PUID: 0
+  #  TZ: Europe/Paris
+  #  UMASK_SET: 022
   ARL: TBD
 schema:
   PGID: "int"

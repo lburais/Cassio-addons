@@ -1,17 +1,7 @@
 # Home Assistant Community Add-ons by Laurent Burais
 
 ![update-badge](https://img.shields.io/github/last-commit/lburais/hassio-addons?label=last%20update)
-![Project Stage][project-stage-shield]
-![Maintenance][maintenance-shield]
-[![License][license-shield]](LICENSE.md)
-
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9c6cf10bdbba45ecb202d7f579b5be0e)](https://www.codacy.com/gh/lburais/hassio-addons/dashboard?utm_source=github.com&utm_medium=referral&utm_content=lburais/hassio-addons&utm_campaign=Badge_Grade)
-[![GitHub Super-Linter](https://img.shields.io/github/actions/workflow/status/lburais/hassio-addons/weekly-supelinter.yaml?label=Lint%20code%20base)](https://github.com/lburais/hassio-addons/actions/workflows/weekly-supelinter.yaml)
-[![Builder](https://img.shields.io/github/actions/workflow/status/lburais/hassio-addons/onpush_builder.yaml?label=Builder)](https://github.com/lburais/hassio-addons/actions/workflows/onpush_builder.yaml)
-[![Statistics](https://github.com/lburais/hassio-addons/workflows/Generate%20weekly%20stats/badge.svg)](https://github.com/lburais/hassio-addons/actions/workflows/weekly_stats.yaml)
-
-[support-badge]: https://camo.githubusercontent.com/f4dbb995049f512fdc97fcc9e022ac243fa38c408510df9d46c7467d0970d959/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f537570706f72742d7468726561642d677265656e2e737667
-
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/52df50fedb4949569495edeb2ea58827)](https://app.codacy.com/gh/lburais/hassio-addons/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ## About
 
@@ -31,11 +21,12 @@ Just click the link above or add my repository: https://github.com/lburais/hassi
 ## Add-ons provided by this repository
 
 &#10003; [Deemix by Bockiii](deemix-bockiii/): deezer downloader based on work done by [bocki](https://gitlab.com/Bockiii/deemix-docker)
+
 &emsp;&emsp; ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix-bockiii%2Fconfig.json)
 ![Update](https://img.shields.io/badge/dynamic/json?label=Updated&query=%24.last_update&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix-bockiii%2Fupdater.json)
 ![aarch64][aarch64-badge]
 ![amd64][amd64-badge]
-![armv7][armv7-nobadge]
+![armv7][armv7no-badge]
 
 ## Support
 

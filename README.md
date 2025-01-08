@@ -15,6 +15,15 @@ If you want to do add the repository manually, please follow the procedure highl
 
 ## Add-ons provided by this repository
 
+&#10003; [Deemix](deemix/): deezer downloader based on work done by [bocki](https://gitlab.com/Bockiii/deemix-docker)
+
+&emsp;&emsp; ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix%2Fconfig.yaml)
+![Update](https://img.shields.io/badge/dynamic/json?label=Updated&query=%24.last_update&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix%2Fupdater.json)
+![aarch64][aarch64-badge]
+![amd64][amd64-badge]
+![armv7][armv7-badge]
+![ingress][ingress-badge]
+
 &#10003; [Deemix by Bockiii](deemix-bockiii/): deezer downloader based on work done by [bocki](https://gitlab.com/Bockiii/deemix-docker)
 
 &emsp;&emsp; ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix-bockiii%2Fconfig.json)

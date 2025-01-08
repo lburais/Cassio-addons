@@ -1,0 +1,36 @@
+#!/usr/bin/with-contenv bash
+
+printf '[cont-init.d] Setting deemix-server\n'
+
+chmod +x /deemix-server
+
+printf '[cont-init.d] Creating abc:abc user:group 0:0\n'
+
+echo "abc:x:0:0:Linux User,,,:/home/abc:/bin/ash" >> /etc/passwd
+echo "abc:x:1000:" >> /etc/group
+
+printf '[cont-init.d] Setting downloads folder\n'
+
+mkdir -p /share/Freebox/Musiques
+ln -s /share/Freebox/Musiques /downloads
+
+printf '[cont-init.d] Setting config folder\n'
+
+mkdir -p /homeassistant/deemix
+ln -s /homeassistant/deemix /config
+
+if [ -f "/deemix/config.json" ]; then
+    cp /deemix/config.json /config/config.json
+    rm /deemix/config.json
+fi
+
+if [ -f "/deemix/login.json" ]; then
+    cp /deemix/login.json /config/login.json
+    rm /deemix/login.json
+fi
+
+# Fix misconfigured download locations. The container's download map is always /downloads.
+if [ -f "/config/config.json" ]; then
+    jq '.downloadLocation = "/downloads"' /config/config.json > tmp.$$.json && mv tmp.$$.json /config/config.json
+fi
+

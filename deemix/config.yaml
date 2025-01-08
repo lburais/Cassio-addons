@@ -1,0 +1,96 @@
+---
+# https://developers.home-assistant.io/docs/add-ons/configuration/#add-on-configuration
+name: Deemix
+version: 1.0.16
+description: deemix
+slug: deemix
+arch:
+  - amd64
+  - aarch64
+  - armv7
+# machine:
+url: https://github.com/lburais/hassio-deemix/tree/master/deemix
+startup: application
+webui: http://[HOST]:[PORT:6595]
+boot: auto
+ports:
+  6595/tcp: 6595
+ports_description:
+  6595/tcp: Web interface
+# host*
+host_network: false
+# devices
+# homeassistant*
+homeassistant_api: true
+# hassio*
+# hassio_api: true
+# hassio_role: manager
+# docker_api: false
+# priviledge
+# full_access
+apparmor: true
+map:
+  - config:rw
+  - backup:rw
+  - share:rw
+  - ssl:ro
+  - media:ro
+# - addons:rw
+# - all_addon_configs:rw
+# - backup:rw
+# - homeassistant_config:rw
+# - media:rw
+# - share:rw
+# - ssl:rw
+environment:
+  ARL: "TBD"
+  UMASK_SET: "022"
+  TZ: Europe/Paris
+  PGID: "0"
+  PUID: "0"
+# audio
+# video
+# gpio
+# usb
+# uart
+# udev
+# devicetree
+# kernel_modules
+# stdin
+# legacy
+options:
+#  PGID: 0
+#  PUID: 0
+#  TZ: Europe/Paris
+#  UMASK_SET: 022
+  ARL: TBD
+schema:
+  PGID: "int"
+  PUID: "int"
+  TZ: "str?"
+  UMASK_SET: "str?"
+  ARL: "str?"
+# image
+# codenotary
+# timeout
+# tmpfs
+# discovery
+# services
+# auth_api
+ingress: true
+ingress_port: 6595
+# ingress_entry: /
+ingress_stream: true
+panel_icon: mdi:music-box-multiple
+# panel_title: deemix
+# panel_admin
+# backup*
+backup_exclude:
+  - "**/downloads/**"
+# advanced
+# stage
+init: false
+# watchdog
+# realtime
+# journald
+# breaking_versions

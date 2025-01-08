@@ -22,13 +22,12 @@ export DEEMIX_MUSIC_DIR=/share/Pharaoh/Musiques/
 export DEEMIX_SERVER_PORT=$port
 export DEEMIX_HOST=0.0.0.0
 
-echo '[services.d] Creating abc:abc user:group 0:0'
+echo '[services.d] abc:abc user:group 0:0'
 
-echo "abc:x:0:0:Linux User,,,:/home/abc:/bin/ash" >> /etc/passwd
-echo "abc:x:1000:" >> /etc/group
+echo "${PUID}:${PGID}"
 
 cat /etc/passwd
 cat /etc/group
 
 echo "[services.d] Starting Deemix"
-s6-setuidgid ${PUID}:${GUID} /deemix-server
+s6-setuidgid ${PUID}:${PGID} /deemix-server

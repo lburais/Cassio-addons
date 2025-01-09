@@ -23,6 +23,7 @@ export DEEMIX_SERVER_PORT=$port
 export DEEMIX_HOST=0.0.0.0
 
 echo "${PUID}:${PGID}"
+cp /deemix/* ${DEEMIX_DATA_DIR}
 
 echo "[services.d] Starting Deemix"
 #s6-setuidgid ${PUID}:${PGID} /deemix-server

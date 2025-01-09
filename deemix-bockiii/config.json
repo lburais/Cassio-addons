@@ -42,6 +42,6 @@
     "slug": "deemix-bockiii",
     "startup": "application",
     "url": "https://github.com/lburais/hassio-addons/tree/master/deemix-bockiii",
-    "version": "1.0.0.2",
+    "version": "1.0.0.3",
     "webui": "http://[HOST]:[PORT:6595]"
   }

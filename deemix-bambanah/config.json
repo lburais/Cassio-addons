@@ -13,8 +13,8 @@
     "description": "Deezer downloader by Bambanah",
     "devices": [],
     "environment": {
-      "PGID": 0,
-      "PUID": 0
+      "PGID": "0",
+      "PUID": "0"
     },
     "host_network": false,
     "homeassistant_api": true,

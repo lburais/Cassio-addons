@@ -1,6 +1,16 @@
 #!/usr/bin/with-contenv bash
 # shellcheck disable=SC1008
 
+echo "[services.d] Variables"
+echo "DEEMIX_SERVER_PORT: ${DEEMIX_SERVER_PORT}"
+echo "DEEMIX_DATA_DIR: ${DEEMIX_DATA_DIR}"
+echo "DEEMIX_MUSIC_DIR: ${DEEMIX_MUSIC_DIR}"
+echo "DEEMIX_HOST: ${DEEMIX_HOST}"
+echo "DEEMIX_SINGLE_USER: ${DEEMIX_SINGLE_USER}"
+echo "PUID: ${PUID}"
+echo "PGID: ${PGID}"
+echo "UMASK_SET: ${UMASK_SET}"
+
 UMASK_SET=${UMASK_SET:-022}
 umask "$UMASK_SET"
 

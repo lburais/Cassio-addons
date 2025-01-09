@@ -1,10 +1,5 @@
 FROM node:20-alpine AS base
 
-ARG TURBO_TEAM
-ENV TURBO_TEAM=$TURBO_TEAM
-
-RUN --mount=type=secret,id=TURBO_TOKEN,env=TURBO_TOKEN
-
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable && corepack install -g pnpm@latest-9

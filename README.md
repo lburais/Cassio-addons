@@ -24,13 +24,23 @@ If you want to do add the repository manually, please follow the procedure highl
 ![armv7][armv7-badge]
 ![ingress][ingress-badge]
 
-&#10003; [Deemix by Bockiii](deemix-bockiii/): deezer downloader based on work done by [bocki](https://gitlab.com/Bockiii/deemix-docker)
+&#10003; [Deemix by Bockiii](deemix-bockiii/): deezer downloader based on work done by [Bocki](https://gitlab.com/Bockiii/deemix-docker)
 
 &emsp;&emsp; ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix-bockiii%2Fconfig.json)
 ![Update](https://img.shields.io/badge/dynamic/json?label=Updated&query=%24.last_update&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix-bockiii%2Fupdater.json)
 ![aarch64][aarch64-badge]
 ![amd64][amd64-badge]
 ![armv7][armv7no-badge]
+![ingress][ingress-badge]
+
+&#10003; [Deemix by Bambanah](deemix-bambanah/): deezer downloader based on work done by [Bambanah](https://github.com/bambanah/deemix)
+
+&emsp;&emsp; ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix-bambanah%2Fconfig.json)
+![Update](https://img.shields.io/badge/dynamic/json?label=Updated&query=%24.last_update&url=https%3A%2F%2Fraw.githubusercontent.com%2Flburais%2Fhassio-addons%2Fmaster%2Fdeemix-bambanah%2Fupdater.json)
+![aarch64][aarch64-badge]
+![amd64][amd64-badge]
+![armv7][armv7no-badge]
+![ingress][ingress-badge]
 
 ## Support
 

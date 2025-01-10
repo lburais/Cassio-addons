@@ -1,6 +1,7 @@
 FROM ghcr.io/bambanah/deemix:latest
 
 COPY docker/ /
+RUN chmod -R +x /etc
 
 ENV DEEMIX_DATA_DIR=/config/
 ENV DEEMIX_MUSIC_DIR=/downloads/

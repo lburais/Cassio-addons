@@ -31,7 +31,7 @@ RUN chmod +x /deemix-server
 COPY root/ /
 RUN chmod -R +x /etc
 
-COPY config/ /deemix
+# COPY config/ /deemix
 
 EXPOSE 6595
 ENTRYPOINT [ "/init" ]

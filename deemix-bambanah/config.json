@@ -12,11 +12,6 @@
     "boot": "auto",
     "description": "Deezer downloader by Bambanah",
     "devices": [],
-    "environment": {
-      "DEEMIX_MUSIC_DIR": "/share/Pharaoh/Musiques",
-      "PGID": "0",
-      "PUID": "0"
-    },
     "host_network": false,
     "homeassistant_api": true,
     "ingress": true,
@@ -43,10 +38,9 @@
       "6595/tcp": "Web interface"
     },
     "schema": {
+      "DEEMIX_SINGLE_USER": "bool",
       "DEEMIX_DATA_DIR": "str?",
       "DEEMIX_MUSIC_DIR": "str?",
-      "DEEMIX_SERVER_PORT": "str?",
-      "DEEMIX_SINGLE_USER": "bool",
       "PGID": "int?",
       "PUID": "int?"
     },

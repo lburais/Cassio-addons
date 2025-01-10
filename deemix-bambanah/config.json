@@ -54,6 +54,6 @@
     "slug": "deemix-bambanah",
     "startup": "application",
     "url": "https://github.com/lburais/hassio-addons/tree/master/deemix-bambanah",
-    "version": "1.0.0i",
+    "version": "1.0.0j",
     "webui": "http://[HOST]:[PORT:6595]"
   }

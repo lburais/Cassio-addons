@@ -3,13 +3,13 @@
 
 printf '[cont-init.d] Testing Access\n'
 
-if [ -w "/downloads" ]; then
+if [ -w "${DEEMIX_MUSIC_DIR}" ]; then
 	printf '%-50s %2s %-5s \n' "[cont-init.d] Download Folder Write Access" ":" "Success"
 else
 	printf '%-50s %2s %-5s \n' "[cont-init.d] Download Folder Write Access" ":" "Failure"
 fi
 
-if [ -w "/config" ]; then
+if [ -w "${DEEMIX_DATA_DIR}" ]; then
 	printf '%-50s %2s %-5s \n' "[cont-init.d] Config Folder Write Access" ":" "Success"
 else
 	printf '%-50s %2s %-5s \n' "[cont-init.d] Config Folder Write Access" ":" "Failure"

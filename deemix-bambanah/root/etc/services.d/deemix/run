@@ -15,7 +15,7 @@ echo "${DEEMIX_DATA_DIR}:"
 ls -la ${DEEMIX_DATA_DIR}
 
 echo "${DEEMIX_MUSIC_DIR}:"
-ls -la ${DEEMIX_MUSIC_DIR}/
+ls -la ${DEEMIX_MUSIC_DIR}/ZAZ
 
 #if [ ! -f /config/deemix/config.json ]; then
 #    cp /deemix/config.json /config/deemix/config.json

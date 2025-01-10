@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bash
 # shellcheck disable=SC1008
 
-echo "[services.d] Variables"
+echo "[services.d]\nVariables"
 echo "DEEMIX_SERVER_PORT: ${DEEMIX_SERVER_PORT}"
 echo "DEEMIX_DATA_DIR: ${DEEMIX_DATA_DIR}"
 echo "DEEMIX_MUSIC_DIR: ${DEEMIX_MUSIC_DIR}"
@@ -11,13 +11,13 @@ echo "PUID: ${PUID}"
 echo "PGID: ${PGID}"
 echo "UMASK_SET: ${UMASK_SET}"
 
-echo "${DEEMIX_DATA_DIR}:"
+echo "\n${DEEMIX_DATA_DIR}:"
 ls -la ${DEEMIX_DATA_DIR}
 
-echo "${DEEMIX_MUSIC_DIR}:"
+echo "\n${DEEMIX_MUSIC_DIR}:"
 ls -la ${DEEMIX_MUSIC_DIR}/ZAZ
 
-echo "abc":
+echo "\nabc:"
 id abc
 
 #if [ ! -f /config/deemix/config.json ]; then

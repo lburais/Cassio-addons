@@ -13,7 +13,6 @@
     "description": "Deezer downloader by Bambanah",
     "devices": [],
     "environment": {
-      "DEEMIX_DATA_DIR": "/homeassistant/deemix",
       "DEEMIX_MUSIC_DIR": "/share/Pharaoh/Musiques",
       "PGID": "0",
       "PUID": "0"
@@ -31,7 +30,7 @@
     "name": "Deemix by Bambanah",
     "options": {
       "DEEMIX_SINGLE_USER": false,
-      "DEEMIX_DATA_DIR": "/homeassistant/deemix",
+      "DEEMIX_DATA_DIR": "/homeassistant/addons_config/deemix",
       "DEEMIX_MUSIC_DIR": "/share/Pharaoh/Musiques",
       "PGID": 0,
       "PUID": 0
@@ -46,6 +45,7 @@
     "schema": {
       "DEEMIX_DATA_DIR": "str?",
       "DEEMIX_MUSIC_DIR": "str?",
+      "DEEMIX_SERVER_PORT": "str?",
       "DEEMIX_SINGLE_USER": "bool",
       "PGID": "int?",
       "PUID": "int?"
@@ -53,6 +53,6 @@
     "slug": "deemix-bambanah",
     "startup": "application",
     "url": "https://github.com/lburais/hassio-addons/tree/master/deemix-bambanah",
-    "version": "1.0.0h",
+    "version": "1.0.0i",
     "webui": "http://[HOST]:[PORT:6595]"
   }

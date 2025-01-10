@@ -13,7 +13,7 @@
     "description": "Deezer downloader by Bambanah",
     "devices": [],
     "environment": {
-      "DEEMIX_SINGLE_USER": false,
+      "DEEMIX_SINGLE_USER": "false",
       "DEEMIX_DATA_DIR": "/homeassistant/addons_config/deemix",
       "DEEMIX_MUSIC_DIR": "/share/Pharaoh/Musiques",
       "PGID": "0",

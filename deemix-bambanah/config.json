@@ -16,6 +16,7 @@
       "DEEMIX_SINGLE_USER": "false",
       "DEEMIX_DATA_DIR": "/homeassistant/addons_config/deemix",
       "DEEMIX_MUSIC_DIR": "/share/Pharaoh/Musiques",
+      "UMASK_SET": "022",
       "PGID": "0",
       "PUID": "0"
     },

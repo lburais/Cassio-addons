@@ -17,6 +17,9 @@ ls -la ${DEEMIX_DATA_DIR}
 printf "\n/config:\n"
 ls -la /config
 
+printf "\n/config/addons_config:\n"
+ls -la /config/addons_config
+
 printf "\n/homeassistant:\n"
 ls -la /homeassistant
 

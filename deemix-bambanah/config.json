@@ -14,7 +14,7 @@
     "devices": [],
     "environment": {
       "DEEMIX_SINGLE_USER": "false",
-      "DEEMIX_DATA_DIR": "/homeassistant/addons_config/deemix",
+      "DEEMIX_DATA_DIR": "/config/addons_config/deemix",
       "DEEMIX_MUSIC_DIR": "/share/Pharaoh/Musiques",
       "UMASK_SET": "022",
       "PGID": "0",
@@ -57,6 +57,6 @@
     "slug": "deemix-bambanah",
     "startup": "application",
     "url": "https://github.com/lburais/hassio-addons/tree/master/deemix-bambanah",
-    "version": "1.0.0n",
+    "version": "1.0.0o",
     "webui": "http://[HOST]:[PORT:6595]"
   }

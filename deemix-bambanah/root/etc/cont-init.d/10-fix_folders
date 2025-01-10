@@ -14,8 +14,8 @@ else
 fi
 
 # Fix misconfigured download locations. The container's download map is always /downloads.
-if [ -f "${DEEMIX_DATA_DIR}/config.json" ]; then
-	printf '[cont-init.d] Fixing download location\n'
-	jq '.downloadLocation = "/downloads"' ${DEEMIX_DATA_DIR}/config.json >tmp.$$.json && mv tmp.$$.json ${DEEMIX_DATA_DIR}/config.json
-	chown abc:abc ${DEEMIX_DATA_DIR}/config.json
-fi
+# if [ -f "${DEEMIX_DATA_DIR}/config.json" ]; then
+# 	printf '[cont-init.d] Fixing download location\n'
+# 	jq '.downloadLocation = "/downloads"' ${DEEMIX_DATA_DIR}/config.json >tmp.$$.json && mv tmp.$$.json ${DEEMIX_DATA_DIR}/config.json
+# 	chown abc:abc ${DEEMIX_DATA_DIR}/config.json
+# fi

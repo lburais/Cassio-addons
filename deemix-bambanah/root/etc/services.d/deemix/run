@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bash
 # shellcheck disable=SC1008
 
-echo "[services.d]\nVariables"
+echo "[services.d] Variables"
 echo "DEEMIX_SERVER_PORT: ${DEEMIX_SERVER_PORT}"
 echo "DEEMIX_DATA_DIR: ${DEEMIX_DATA_DIR}"
 echo "DEEMIX_MUSIC_DIR: ${DEEMIX_MUSIC_DIR}"

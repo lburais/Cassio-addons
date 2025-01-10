@@ -11,13 +11,19 @@ echo "PUID: ${PUID}"
 echo "PGID: ${PGID}"
 echo "UMASK_SET: ${UMASK_SET}"
 
-echo "\n${DEEMIX_DATA_DIR}:"
+printf "\n${DEEMIX_DATA_DIR}:\n"
 ls -la ${DEEMIX_DATA_DIR}
 
-echo "\n${DEEMIX_MUSIC_DIR}:"
+printf "\n/homeassistant:\n"
+ls -la /homeassistant
+
+printf "\nroot:\n"
+ls -la /
+
+printf "\n${DEEMIX_MUSIC_DIR}:\n"
 ls -la ${DEEMIX_MUSIC_DIR}/ZAZ
 
-echo "\nabc:"
+printf "\nabc:\n"
 id abc
 
 #if [ ! -f /config/deemix/config.json ]; then

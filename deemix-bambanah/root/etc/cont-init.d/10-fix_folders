@@ -7,9 +7,9 @@ mkdir -p ${DEEMIX_DATA_DIR}
 chown -R abc:abc ${DEEMIX_DATA_DIR}
 
 if [ -n "${DISABLE_OWNERSHIP_CHECK}" ]; then
-	printf '[cont-init.d] Download Folder Ownership Check disabled by Environment Variable\n'
+	printf "[cont-init.d] Download Folder Ownership Check disabled by Environment Variable\n"
 else
-	printf '[cont-init.d] Fixing Folder Permissions - Downloads [${DEEMIX_MUSIC_DIR}] Folder\n'
+	printf "[cont-init.d] Fixing Folder Permissions - Downloads [${DEEMIX_MUSIC_DIR}] Folder\n"
 	find ${DEEMIX_MUSIC_DIR} -type d -exec chown abc:abc {} +
 fi
 

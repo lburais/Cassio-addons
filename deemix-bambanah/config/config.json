@@ -38,7 +38,6 @@
     "maxBitrate": "1",
     "overwriteFile": "y",
     "executeCommand": "",
-    "downloadLocation": "/downloads",
     "tracknameTemplate": "%artist% – %title%",
     "albumTracknameTemplate": "%tracknumber% – %title% – %artist% – %album%",
     "playlistTracknameTemplate": "%position% – %artist% – %title%",

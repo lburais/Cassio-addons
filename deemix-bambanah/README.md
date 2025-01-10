@@ -26,7 +26,7 @@ comparison to installing any other Hass.io add-on.
 
 
 ```yaml
-DEEMIX_SERVER_PORT: Port to expose the server on (default: 6585)
+DEEMIX_SERVER_PORT: Port to expose the server on (default: 6595)
 DEEMIX_DATA_DIR: Path to the config folder (default: /config)
 DEEMIX_MUSIC_DIR: Path to the music folder (default: /downloads)
 DEEMIX_HOST: Host to bind the server to (default: 0.0.0.0)

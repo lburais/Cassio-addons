@@ -11,8 +11,8 @@ echo "PUID: ${PUID}"
 echo "PGID: ${PGID}"
 echo "UMASK_SET: ${UMASK_SET}"
 
-if [ ! -f ${DEEMIX_DATA_DIR}/config.json ]; then
-    cp /deemix/config.json ${DEEMIX_DATA_DIR}
+if [ ! -f /config/deemix/config.json ]; then
+    cp /deemix/config.json /config/deemix/config.json
 fi
 
 UMASK_SET=${UMASK_SET:-022}

@@ -14,17 +14,14 @@ echo "UMASK_SET: ${UMASK_SET}"
 printf "\n${DEEMIX_DATA_DIR}:\n"
 ls -la ${DEEMIX_DATA_DIR}
 
+printf "\n/config:\n"
+ls -la /config
+
 printf "\n/homeassistant:\n"
 ls -la /homeassistant
 
 printf "\nroot:\n"
 ls -la /
-
-printf "\n${DEEMIX_MUSIC_DIR}:\n"
-ls -la ${DEEMIX_MUSIC_DIR}/ZAZ
-
-printf "\nabc:\n"
-id abc
 
 #if [ ! -f /config/deemix/config.json ]; then
 #    cp /deemix/config.json /config/deemix/config.json

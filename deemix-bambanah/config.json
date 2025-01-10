@@ -28,7 +28,9 @@
     "init": false,
     "map": [ 
       "share:rw", 
-      "config:rw"
+      "config:rw",
+      "all_addon_configs:rw",
+      "homeassistant_config:rw"
     ],
     "name": "Deemix by Bambanah",
     "options": {
@@ -55,6 +57,6 @@
     "slug": "deemix-bambanah",
     "startup": "application",
     "url": "https://github.com/lburais/hassio-addons/tree/master/deemix-bambanah",
-    "version": "1.0.0m",
+    "version": "1.0.0n",
     "webui": "http://[HOST]:[PORT:6595]"
   }

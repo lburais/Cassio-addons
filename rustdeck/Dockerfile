@@ -1,5 +1,5 @@
 # Use RustDesk official image
-FROM rustdesk/rustdesk-server:latest
+FROM ghcr.io/rustdesk/rustdesk-server-s6:latest
 
 # Set working directory
 WORKDIR /root

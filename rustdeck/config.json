@@ -45,6 +45,6 @@
     "slug": "rustdesk",
     "startup": "application",
     "url": "https://github.com/lburais/hassio-addons/tree/master/rustdesk",
-    "version": "1.0.0e",
+    "version": "1.0.0f",
     "webui": "http://[HOST]:[PORT:6595]"
   }

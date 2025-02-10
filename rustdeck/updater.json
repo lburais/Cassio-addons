@@ -1,8 +1,6 @@
 {
-    "last_update": "09-01-2025",
+    "last_update": "10-02-2025",
     "repository": "lburais/hassio-addons",
-    "slug": "deemix-bambanah",
-    "source": "github",
-    "upstream_repo": "bambanah/deemix",
-    "upstream_version": "4.3.0"  
+    "slug": "rustdesk",
+    "source": "github"
 }

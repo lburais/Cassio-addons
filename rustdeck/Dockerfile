@@ -16,5 +16,5 @@ EXPOSE 21115 21116 21117 21118 21119
 EXPOSE 21116/udp
 
 # Run startup script
-CMD ["/start.sh"]# Start Supervisor (which starts both hbbs and hbbr)
-# CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+# CMD ["/start.sh"]# Start Supervisor (which starts both hbbs and hbbr)
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]

@@ -5,7 +5,7 @@ FROM ghcr.io/rustdesk/rustdesk-server-s6:latest
 WORKDIR /root
 
 # Copy Supervisor config
-COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+# COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Copy startup script
 COPY start.sh /start.sh
